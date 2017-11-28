@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.cga.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/idrech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/mycolor"
+            />
+
+        <Button
+            android:id="@+id/rech"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:background="@drawable/rech"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="fill_parent"
+        android:layout_height="361dp"
+        android:dividerHeight="2dp"
+        android:listSelector="#DFF2FF"
+        android:layout_weight="0.84" />
+
+    <Button
+        android:id="@+id/ajout"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@drawable/add" />
+
+</LinearLayout>
